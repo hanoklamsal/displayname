@@ -15,7 +15,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFullname(fname + "  " +lname);
+    setFullname(" " +fname+ " " +lname);
   };
 
   return (
