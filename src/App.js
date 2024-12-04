@@ -18,6 +18,8 @@ function App() {
     setFullname(" " +fname+ " " +lname);
   };
 
+  console.log(fname, lname, fullName);
+
   return (
     <div>
       <h4>Full Name Display</h4>
@@ -33,7 +35,7 @@ function App() {
         <button type="submit">Submit</button>
       </form>
       <div>
-        {fullName && <span>Full Name:{fullName}</span>}
+        {fullName && fname && lname && <span>Full Name:{fullName}</span>}
       </div>
     </div>
   );
