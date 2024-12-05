@@ -24,14 +24,11 @@ function App() {
     <div>
       <h4>Full Name Display</h4>
       <form onSubmit={handleSubmit}>
-        <div>
           <label>First Name:</label>
           <input type="text" name="fname" onChange={handleFnameChange} required />
-        </div>
-        <div>
+          <br/>
           <label>Last Name:</label>
           <input type="text" name="lname" onChange={handleLnameChange} required />
-        </div>
         <button type="submit">Submit</button>
       </form>
       <div>
