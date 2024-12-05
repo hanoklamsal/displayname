@@ -15,26 +15,25 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFullname(" " +fname+ " " +lname);
+    setFullname(" " + fname + " " + lname);
   };
 
   console.log(fname, lname, fullName);
 
   return (
-    <div>
+    <>
       <h4>Full Name Display</h4>
       <form onSubmit={handleSubmit}>
-          <label>First Name:</label>
-          <input type="text" name="fname" onChange={handleFnameChange} required />
-          <br/>
-          <label>Last Name:</label>
-          <input type="text" name="lname" onChange={handleLnameChange} required />
+        <label>First Name:</label>
+        <input type="text" name="fname" onChange={handleFnameChange} required />
+        <br />
+        <label>Last Name:</label>
+        <input type="text" name="lname" onChange={handleLnameChange} required />
         <button type="submit">Submit</button>
       </form>
-      <div>
-        {fullName && fname && lname && <span>Full Name:{fullName}</span>}
-      </div>
-    </div>
+
+      {fullName && fname && lname && <span>Full Name:{fullName}</span>}
+    </>
   );
 }
 
